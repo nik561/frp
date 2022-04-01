@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  proxy:
+    build:
+      context: .
+    environment:
+      PERSONAL_ALIAS: test
+      SERVER_HOST: example.com
+      SERVER_TOKEN: token
+      SERVER_PORT: 7000
+      LOCAL_HOST:
+      LOCAL_PORT: 80
