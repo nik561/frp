@@ -8,7 +8,7 @@ WORKDIR /opt/frp
 
 ADD ${FRP_URL} /tmp/frp.tar.gz
 RUN tar --strip 1 -xvzf /tmp/frp.tar.gz -C /opt/frp && rm /tmp/frp.tar.gz
-COPY frps.ini /opt.frp/frps.ini
+COPY frps.ini /opt/frp/frps.ini
 ADD server-entrypoint.sh entrypoint.sh
 RUN chmod +x entrypoint.sh
 
