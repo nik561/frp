@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: server.Dockerfile
+    ports:
+      - "7000:7000"
+      - "7001:7001"
+      - "7005:7005"
+      - "7006:7006"
+      - "7500:7500"

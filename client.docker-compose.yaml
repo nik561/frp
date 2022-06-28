@@ -4,6 +4,7 @@ services:
   proxy:
     build:
       context: .
+      dockerfile: client.Dockerfile
     environment:
       PERSONAL_ALIAS: test
       SERVER_HOST: example.com
